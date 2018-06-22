@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/xiaomi/corot
 
+BUILD_BROKEN_DUP_RULES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
