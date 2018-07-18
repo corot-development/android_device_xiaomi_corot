@@ -326,6 +326,7 @@ PRODUCT_PACKAGES += \
     WifiResOverlayCorot
 
 PRODUCT_PACKAGES += \
+    LineageDialerOverlayCorot \
     LineageSettingsOverlayCorot
 
 # Radio
