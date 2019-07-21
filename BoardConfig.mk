@@ -144,6 +144,9 @@ BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2025-01-01
+
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
