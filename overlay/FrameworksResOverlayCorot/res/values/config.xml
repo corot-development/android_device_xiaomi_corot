@@ -73,6 +73,11 @@
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
 
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+         manually by the user. Off by default, since the expected haptic feedback may not be
+         available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
+
     <!-- Boolean indicating USSD over IMS is allowed.
      If it is not supported due to modem limitations, USSD send over the CS pipe instead.-->
     <bool name="config_allow_ussd_over_ims">true</bool>
