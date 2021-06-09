@@ -261,8 +261,12 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCorot \
+    SettingsProviderOverlayCorotRedmi \
+    SettingsProviderOverlayCorotXiaomi \
     SystemUIOverlayCorot \
     TetheringResOverlayCorot \
+    WifiResOverlayCorotRedmi \
+    WifiResOverlayCorotXiaomi \
     WifiResOverlayCorot
 
 PRODUCT_PACKAGES += \
