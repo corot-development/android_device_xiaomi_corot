@@ -1,3 +1,6 @@
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
