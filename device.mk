@@ -258,6 +258,10 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.insmod.mt6985.cfg
 
+# Overlays
+PRODUCT_PACKAGES += \
+    WifiResOverlayCorot
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6985 \
