@@ -277,6 +277,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
