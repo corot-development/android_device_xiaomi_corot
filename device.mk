@@ -281,6 +281,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
+PRODUCT_PACKAGES += \
+    libjsoncpp.vendor
+
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
