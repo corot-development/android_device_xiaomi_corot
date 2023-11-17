@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
