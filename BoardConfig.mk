@@ -69,6 +69,8 @@ TARGET_SCREEN_DENSITY := 440
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    vendor/lineage/config/device_framework_matrix.xml
 
 # Kernel
 KERNEL_PREBUILTS_DIR := $(DEVICE_PATH)-kernel
