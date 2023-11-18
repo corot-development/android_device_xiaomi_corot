@@ -84,6 +84,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0.vendor
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport.vendor \
+    libhidltransport \
+    libhwbinder.vendor \
+    libhwbinder
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor \
