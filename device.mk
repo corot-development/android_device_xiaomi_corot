@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
+    libaudiopreprocessing \
     libbluetooth_audio_session \
     libbundlewrapper \
     libunwindstack.vendor \
