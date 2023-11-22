@@ -47,6 +47,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libalsautils.so', 'libalsautils-v33.so'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
+    ('vendor/bin/mnld', 'vendor/lib64/mt6985/libaalservice.so', 'vendor/lib64/mt6985/libpqconfig.so', 'vendor/lib64/librgbwlightsensor.so'): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
