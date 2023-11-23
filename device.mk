@@ -312,12 +312,12 @@ PRODUCT_PACKAGES += \
     fstab.mt6985 \
     fstab.mt6985.vendor_ramdisk \
     init.batterysecret.rc \
-    init.cgroup.rc \
     init.connectivity.rc \
     init.fingerprint.rc \
     init.mi_thermald.rc \
     init.modem.rc \
     init.mt6985.rc \
+    init.mt6985.power.rc \
     init.mt6985.usb.rc \
     init.mtkgki.rc \
     init.sensor_2_0.rc \
