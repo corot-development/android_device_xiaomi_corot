@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    TetheringResOverlayCorot \
     WifiResOverlayCorot
 
 # Rootdir
