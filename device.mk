@@ -184,6 +184,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     android.hidl.allocator@1.0.vendor
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IMS
 PRODUCT_PACKAGES += \
     libaudioclient_shim \
