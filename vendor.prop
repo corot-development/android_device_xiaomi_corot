@@ -133,6 +133,7 @@ ro.vendor.gps.chrdev=gps_drv_dl_v061
 ro.vendor.mtk_log_hide_gps=1
 
 # Media
+debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
 ro.vendor.hdr10plus.enable=1
 ro.vendor.jpeg_decode_sw_opt=2
