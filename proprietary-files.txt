@@ -712,7 +712,7 @@ vendor/etc/camera/ellv.bin
 vendor/etc/camera/ellv_params.xml
 vendor/etc/camera/F1_pink.cng
 vendor/etc/camera/fold_qianzhi_512_edutpu140_ar36912_depth128_dd48_2_128_inscale_q12qrqfct_rotate45_scale_distortcolor_quantaware_step205420_without_softmax_mdla35.dla
-vendor/etc/camera/gma_custom.xml
+vendor/etc/camera/gma_custom.xml:vendor/etc/camera/gma_custom.txt;SYMLINK=vendor/etc/camera/gma_custom.xml
 vendor/etc/camera/ldc/M12_CN_AI_Seg.bin
 vendor/etc/camera/ldc/M12_CN_LDC_REAR_FPC_TUNING_AI.bin
 vendor/etc/camera/ldc/M12_CN_LDC_REAR_FPC_TUNING.bin
