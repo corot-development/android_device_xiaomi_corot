@@ -167,4 +167,9 @@
         <name>vendor.mediatek.hardware.pq_aidl</name>
         <fqname>IPictureQuality_AIDL/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IVideoTelephony/default</fqname>
+    </hal>
 </manifest>

@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     android.hidl.allocator@1.0.vendor
 
+# IMS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor \
@@ -263,6 +267,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayCorotRedmi \
     SettingsProviderOverlayCorotXiaomi \
     SystemUIOverlayCorot \
+    TelephonyOverlayCorot \
     TetheringResOverlayCorot \
     WifiResOverlayCorotRedmi \
     WifiResOverlayCorotXiaomi \
