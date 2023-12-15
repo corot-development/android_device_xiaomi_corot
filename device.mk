@@ -163,6 +163,9 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor
 
 # IMS
+PRODUCT_PACKAGES += \
+    libaudioclient_shim
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
