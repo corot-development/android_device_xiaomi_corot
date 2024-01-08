@@ -309,6 +309,10 @@ PRODUCT_COPY_FILES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# SKU
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sku/,$(TARGET_COPY_OUT_ODM)/etc)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

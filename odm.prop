@@ -17,3 +17,7 @@ vendor.displayfeature.entry.enable=true
 # Display (Pixelworks)
 persist.vendor.display.pxlw.iris_feature=0x413F0780
 ro.vendor.display.iris_x7.support=true
+
+# SKU
+ro.product.property_source_order=odm,vendor,product,system_ext,system
+import /odm/etc/${ro.boot.hwc}.prop
