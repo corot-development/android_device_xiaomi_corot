@@ -16,6 +16,14 @@ vendor.audio.spkcal.copy.inhal=true
 vendor.audio.usb.iems.period_us=5000
 vendor.audio.usb.super_hifi=true
 vendor.audiohal.telephonytx.type=2
+persist.vendor.audiohal.aurisys.pcm_dump_on=0
+persist.vendor.audiohal.p2w_dump_on=0
+persist.vendor.audiohal.pcm_mixer_dump_on=0
+vendor.usbsph.dl.pcm.dump=0
+vendor.usbsph.ul.pcm.dump=0
+vendor.usbsph.srcaws.pcm.dump=0
+vendor.streamout.pcm.dump=0
+vendor.streamin.pcm.dump=0
 
 # Display
 debug.mediatek.disp_decompress=1
