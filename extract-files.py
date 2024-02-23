@@ -34,6 +34,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libui_shim.so'),
     'system_ext/lib64/libsink.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
+    ('system_ext/etc/init/init.vtservice.rc', 'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc'): blob_fixup()
+        .regex_replace('start', 'enable'),
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
         .replace_needed('android.hardware.graphics.composer@2.1-resources.so', 'android.hardware.graphics.composer@2.1-resources-v34.so'),
     'vendor/bin/hw/android.hardware.security.keymint@2.0-service.mitee': blob_fixup()
