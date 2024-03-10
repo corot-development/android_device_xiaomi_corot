@@ -59,7 +59,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.primary.default \
     audio.bluetooth.default \
-    audio.usb.default
+    audio.usb.default \
+    libstagefright_foundation-v33
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
