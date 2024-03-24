@@ -332,7 +332,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageApertureOverlayCorot \
     LineageDialerOverlayCorot \
-    LineageSettingsOverlayCorot
+    LineageSettingsOverlayCorot \
+    PowerOffAlarmOverlayCorot
 
 # Radio
 PRODUCT_PACKAGES += \
