@@ -50,6 +50,7 @@ vendor/lib64/libmtkspparser.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
 vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v33.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libvow_ap_test_aa.so
 vendor/lib64/libvow_ap_test_dd.so
