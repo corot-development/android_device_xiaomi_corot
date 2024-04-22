@@ -314,6 +314,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCorot \
+    NfcOverlayCorot \
     SettingsOverlayCorot \
     SettingsProviderOverlayCorotRedmi \
     SettingsProviderOverlayCorotXiaomi \
