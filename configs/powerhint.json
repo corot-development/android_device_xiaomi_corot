@@ -345,7 +345,7 @@
       "Name": "UclampTAMin",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
-        "10",
+        "0",
         "100"
       ],
       "DefaultIndex": 0,
