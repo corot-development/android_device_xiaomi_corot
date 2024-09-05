@@ -17,6 +17,13 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/xiaomi/corot',
+    'hardware/mediatek',
+    'hardware/xiaomi',
+]
+
+
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
 
@@ -56,6 +63,7 @@ module = ExtractUtilsModule(
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
