@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.common-V1-ndk.vendor \
     android.hardware.audio.service \
     android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
@@ -60,26 +59,6 @@ PRODUCT_PACKAGES += \
     audio.primary.default \
     audio.bluetooth.default \
     audio.usb.default
-
-PRODUCT_PACKAGES += \
-    libaudiofoundation.vendor \
-    libaudiopreprocessing \
-    libbluetooth_audio_session \
-    libbundlewrapper \
-    libunwindstack.vendor \
-    libalsautils \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libhapticgenerator \
-    libldnhncr \
-    libnbaio_mono \
-    libreverbwrapper \
-    libtinycompress \
-    libvisualizer
-
-PRODUCT_PACKAGES += \
-    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -96,19 +75,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1.vendor
-
-# Camera
-PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
-    android.hardware.camera.common@1.0.vendor \
-    android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider-V1-ndk.vendor \
-    android.hardware.camera.provider@2.6.vendor
-
-PRODUCT_PACKAGES += \
-    libcamera_metadata.vendor
+    android.hardware.bluetooth.audio-impl
 
 # ConsumerIR
 PRODUCT_PACKAGES += \
@@ -118,24 +85,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
 
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.common-V5-ndk.vendor \
-    android.hardware.graphics.composer3-V1-ndk.vendor \
-    android.hardware.graphics.composer@2.2-resources.vendor \
-    android.frameworks.sensorservice@1.0.vendor \
-    libdrm.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-resources-v34.vendor \
-    libutilscallstack.vendor
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
-
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -152,70 +104,23 @@ PRODUCT_PACKAGES += \
     libudfpshandler \
     sensors.xiaomi.v2
 
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
-
-# GNSS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V2-ndk.vendor
-
-PRODUCT_PACKAGES += \
-    libcurl.vendor \
-    libexpat.vendor
 
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
-PRODUCT_PACKAGES += \
-    android.hardware.health@1.0.vendor
-
-# HIDL
-PRODUCT_PACKAGES += \
-    libhidltransport.vendor \
-    libhidltransport \
-    libhwbinder.vendor \
-    libhwbinder \
-    android.hidl.allocator@1.0.vendor
-
 # IFAA manager
 PRODUCT_PACKAGES += \
     IFAAService
 
 # IMS
-PRODUCT_PACKAGES += \
-    libaudioclient_shim \
-    libui_shim
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor \
-    libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor \
-    libkeymaster4support.vendor
-
-# Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V2-ndk.vendor \
-    android.hardware.security.rkp-V3-ndk.vendor \
-    android.hardware.security.secureclock-V1-ndk.vendor \
-    android.hardware.security.sharedsecret-V1-ndk.vendor \
-    lib_android_keymaster_keymint_utils.vendor \
-    libcppbor_external.vendor \
-    libkeymint.vendor \
-    libkeymint_support.vendor
 
 # Light
 PRODUCT_PACKAGES += \
@@ -273,12 +178,6 @@ PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
     libmtkperf_client
 
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
@@ -290,17 +189,6 @@ PRODUCT_PACKAGES += \
 include $(LOCAL_PATH)/vendor_logtag.mk
 
 # Media
-PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libavservices_minijail_vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor \
-    libstagefright_foundation-v33
-
-PRODUCT_PACKAGES += \
-    libcamera2ndk_vendor
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -348,17 +236,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarmOverlayCorot
 
 # Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2.vendor \
-    android.hardware.radio-V1-ndk.vendor \
-    android.hardware.radio.config-V1-ndk.vendor \
-    android.hardware.radio.data-V1-ndk.vendor \
-    android.hardware.radio.messaging-V1-ndk.vendor \
-    android.hardware.radio.modem-V1-ndk.vendor \
-    android.hardware.radio.network-V1-ndk.vendor \
-    android.hardware.radio.sim-V1-ndk.vendor \
-    android.hardware.radio.voice-V1-ndk.vendor
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/rsc,$(TARGET_COPY_OUT_VENDOR)/etc/rsc)
 
@@ -381,17 +258,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6985.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6985.rc
 
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor \
-    libchrome.vendor
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-subhal-impl-1.0 \
-    android.hardware.sensors@1.0-convert-shared.vendor \
-    android.hardware.sensors-service.xiaomi-multihal \
-    libsensorndkbridge
+    android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
@@ -450,18 +320,8 @@ PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
     android.hardware.wifi-service
 
-PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-
-# Xiaomi
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mtdservice@1.3.vendor \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mfidoca@1.0.vendor
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/corot/corot-vendor.mk)
