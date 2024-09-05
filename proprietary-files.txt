@@ -49,8 +49,8 @@ vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libmtkspparser.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libspeech_enh_lib.so
-vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v33.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v33.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libvow_ap_test_aa.so
 vendor/lib64/libvow_ap_test_dd.so
@@ -1084,7 +1084,7 @@ odm/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
 odm/lib64/libmfido_mitee.so
 
 # Fingerprint
-odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
+odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 
 # Gatekeeper
@@ -1262,7 +1262,7 @@ vendor/lib64/libmvpu_runtime_builtin.so
 vendor/lib64/libmvpu_runtime_pub.so
 vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
-vendor/lib64/libneuron_runtime_vpp.6.0.3.so
+vendor/lib64/libneuron_runtime_vpp.6.0.3.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
 vendor/lib64/libvpu.so
@@ -1399,7 +1399,7 @@ vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6985.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 
 # Soter
 odm/bin/soterd
@@ -1512,4 +1512,4 @@ vendor/etc/wifi/passpointProfile.conf
 vendor/firmware/WIFI_MT6639_PATCH_MCU_1u_1_hdr.bin
 vendor/firmware/WIFI_RAM_CODE_MT6639_1u_1.bin
 vendor/firmware/wifi.cfg
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
