@@ -265,6 +265,9 @@ PRODUCT_PACKAGES += \
     TetheringResOverlayCorot \
     WifiResOverlayCorot
 
+PRODUCT_PACKAGES += \
+    LineageSettingsOverlayCorot
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6985 \
