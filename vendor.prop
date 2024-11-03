@@ -215,6 +215,9 @@ telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 import /vendor/etc/rsc/${ro.boot.rsc}.prop
 
+# Sensors
+ro.vendor.sensors.xiaomi.udfps=true
+
 # SurfaceFlinger
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
