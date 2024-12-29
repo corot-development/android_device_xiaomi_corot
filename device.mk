@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
     libdrm.vendor
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-resources-v34.vendor \
     libutilscallstack.vendor
 
 # Dynamic Partitions
