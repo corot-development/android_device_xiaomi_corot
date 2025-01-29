@@ -48,6 +48,48 @@ PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.common-V1-ndk.vendor \
+    android.hardware.audio.service \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audio.primary.default \
+    audio.bluetooth.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    libaudiofoundation.vendor \
+    libbluetooth_audio_session \
+    libbundlewrapper \
+    libunwindstack.vendor \
+    libalsautils \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libhapticgenerator \
+    libldnhncr \
+    libnbaio_mono \
+    libreverbwrapper \
+    libtinycompress \
+    libvisualizer
+
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
+
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
