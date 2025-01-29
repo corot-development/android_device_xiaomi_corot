@@ -301,6 +301,9 @@ odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
 vendor/lib64/libpwirisPCSce.so
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mitee.so
+
 # Keymint
 vendor/bin/hw/android.hardware.identity-service.mitee@4.0
 vendor/bin/hw/android.hardware.security.keymint@2.0-service.mitee
