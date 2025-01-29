@@ -48,6 +48,21 @@ PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.mediatek-mali
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.common-V3-ndk.vendor \
+    android.hardware.graphics.composer3-V1-ndk.vendor \
+    android.hardware.graphics.composer@2.2-resources.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    libdrm.vendor
+
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
