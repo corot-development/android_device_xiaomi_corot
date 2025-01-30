@@ -194,6 +194,23 @@ vendor/etc/audiodata.db
 # Batterysecret
 vendor/bin/batterysecret
 
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
+vendor/bin/uart_launcher
+vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+vendor/etc/init/init.btmtk_uart.rc
+vendor/firmware/BT_FW.cfg
+vendor/firmware/BT_RAM_CODE_MT6639_1u_1_hdr.bin
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbt-vendor.so
+
+# Bluetooth (A2DP)
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+
 # Display
 vendor/bin/hw/android.hardware.graphics.composer@3.1-service
 vendor/bin/hw/mt6985/android.hardware.graphics.allocator@4.0-service-mediatek.mt6985;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek

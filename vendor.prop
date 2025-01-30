@@ -25,6 +25,14 @@ vendor.usbsph.srcaws.pcm.dump=0
 vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
 
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-ldac-lhdcv3-lhdcv5
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bluetooth.leaudio_mode=ums-cg
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bt.connac3=yes
+ro.vendor.bt.platform=6639
+
 # Display
 debug.mediatek.disp_decompress=1
 persist.vendor.sys.pq.disp.gamma.silky.brightness=1
