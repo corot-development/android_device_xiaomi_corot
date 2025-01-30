@@ -47,6 +47,9 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bt.connac3=yes
 ro.vendor.bt.platform=6639
 
+# ConsumerIR
+ro.hardware.consumerir=common
+
 # Display
 debug.mediatek.disp_decompress=1
 persist.vendor.sys.pq.disp.gamma.silky.brightness=1
