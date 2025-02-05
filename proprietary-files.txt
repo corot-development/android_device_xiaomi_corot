@@ -519,6 +519,15 @@ odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
 vendor/lib64/libpwirisPCSce.so
 
+# DRM
+odm/lib64/libwvkeybox.so
+odm/lib64/libwvkeyboxext.so
+vendor/bin/hw/android.hardware.drm-service.widevine
+vendor/etc/init/android.hardware.drm-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libwvaidl.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mitee.so
 

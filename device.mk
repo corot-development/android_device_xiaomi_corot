@@ -117,6 +117,13 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources-v34.vendor \
     libutilscallstack.vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
