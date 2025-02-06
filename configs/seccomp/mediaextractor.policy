@@ -1,0 +1,6 @@
+# MediaTek used system call
+gettimeofday: 1
+unlinkat: 1
+setsockopt: 1
+clock_gettime: 1
+setrlimit: 1
