@@ -177,3 +177,9 @@ debug.sf.treat_170m_as_sRGB=1
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_mitee_support=1
 ro.vendor.mtk_tee_gp_support=1
+
+# Wi-Fi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi_connac3
+ro.vendor.wlan.gen=gen4m_6985_6639
