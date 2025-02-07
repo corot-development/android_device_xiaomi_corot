@@ -313,6 +313,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6985.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6985.rc
 
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor \
+    libchrome.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-subhal-impl-1.0 \

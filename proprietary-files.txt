@@ -795,6 +795,17 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so
 
+# Secure Element
+odm/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/etc/init/vendor.xiaomi.hardware.secure_element@1.2-service.rc
+vendor/lib64/jcos_nq_client.so
+vendor/lib64/libmigpese@1.0.so
+vendor/lib64/ls_nq_client.so
+vendor/lib64/se_nq_extn_client.so
+
 # Sensors
 vendor/etc/elliptic_sensor.xml
 vendor/firmware/remoteproc_scp
