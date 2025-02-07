@@ -260,6 +260,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FrameworksResOverlayCorot \
+    SystemUIOverlayCorot \
     TetheringResOverlayCorot \
     WifiResOverlayCorot
 
