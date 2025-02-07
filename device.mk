@@ -272,6 +272,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageSettingsOverlayCorot
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio-V1-ndk.vendor \
+    android.hardware.radio.config-V1-ndk.vendor \
+    android.hardware.radio.data-V1-ndk.vendor \
+    android.hardware.radio.messaging-V1-ndk.vendor \
+    android.hardware.radio.modem-V1-ndk.vendor \
+    android.hardware.radio.network-V1-ndk.vendor \
+    android.hardware.radio.sim-V1-ndk.vendor \
+    android.hardware.radio.voice-V1-ndk.vendor
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/rsc,$(TARGET_COPY_OUT_VENDOR)/etc/rsc)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6985 \

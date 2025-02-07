@@ -35,6 +35,59 @@
         <fqname>@4.0::IMapper/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.2::ISap/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.config</name>
+        <fqname>IRadioConfig/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.data</name>
+        <fqname>IRadioData/slot1</fqname>
+        <fqname>IRadioData/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.messaging</name>
+        <fqname>IRadioMessaging/slot1</fqname>
+        <fqname>IRadioMessaging/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.modem</name>
+        <fqname>IRadioModem/imsSlot1</fqname>
+        <fqname>IRadioModem/imsSlot2</fqname>
+        <fqname>IRadioModem/se1</fqname>
+        <fqname>IRadioModem/se2</fqname>
+        <fqname>IRadioModem/slot1</fqname>
+        <fqname>IRadioModem/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.network</name>
+        <fqname>IRadioNetwork/imsSlot1</fqname>
+        <fqname>IRadioNetwork/imsSlot2</fqname>
+        <fqname>IRadioNetwork/slot1</fqname>
+        <fqname>IRadioNetwork/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.sim</name>
+        <fqname>IRadioSim/imsSlot1</fqname>
+        <fqname>IRadioSim/imsSlot2</fqname>
+        <fqname>IRadioSim/se1</fqname>
+        <fqname>IRadioSim/se2</fqname>
+        <fqname>IRadioSim/slot1</fqname>
+        <fqname>IRadioSim/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.voice</name>
+        <fqname>IRadioVoice/imsSlot1</fqname>
+        <fqname>IRadioVoice/imsSlot2</fqname>
+        <fqname>IRadioVoice/slot1</fqname>
+        <fqname>IRadioVoice/slot2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
         <fqname>@2.3::ISoundTriggerHw/default</fqname>
@@ -59,6 +112,46 @@
         <name>vendor.mediatek.hardware.mms</name>
         <transport>hwbinder</transport>
         <fqname>@1.7::IMms/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.data</name>
+        <fqname>IMtkRadioExData/slot1</fqname>
+        <fqname>IMtkRadioExData/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.ims</name>
+        <fqname>IMtkRadioExIms/slot1</fqname>
+        <fqname>IMtkRadioExIms/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.messaging</name>
+        <fqname>IMtkRadioExMessaging/slot1</fqname>
+        <fqname>IMtkRadioExMessaging/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.modem</name>
+        <fqname>IMtkRadioExModem/slot1</fqname>
+        <fqname>IMtkRadioExModem/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.network</name>
+        <fqname>IMtkRadioExNetwork/slot1</fqname>
+        <fqname>IMtkRadioExNetwork/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.rcs</name>
+        <fqname>IMtkRadioExRcs/slot1</fqname>
+        <fqname>IMtkRadioExRcs/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.sim</name>
+        <fqname>IMtkRadioExSim/slot1</fqname>
+        <fqname>IMtkRadioExSim/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.voice</name>
+        <fqname>IMtkRadioExVoice/slot1</fqname>
+        <fqname>IMtkRadioExVoice/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.netdagent</name>
