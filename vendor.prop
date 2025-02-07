@@ -143,6 +143,13 @@ ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.decode.error.handle.mode=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# Neural Networks
+ro.vendor.mtk_mvpu_security_support=0
+ro.vendor.mtk_nn_baseline_support=1
+ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
+ro.vendor.mtk_nn_quant_preferred=1
+ro.vendor.mtk_nn_support=1
+
 # SurfaceFlinger
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
