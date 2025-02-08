@@ -130,6 +130,13 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.xiaomi
+
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -268,6 +275,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCorot \
+    SettingsOverlayCorot \
     SettingsProviderOverlayCorotRedmi \
     SettingsProviderOverlayCorotXiaomi \
     SystemUIOverlayCorot \
@@ -302,6 +310,7 @@ PRODUCT_PACKAGES += \
     init.batterysecret.rc \
     init.cgroup.rc \
     init.connectivity.rc \
+    init.fingerprint.rc \
     init.mi_thermald.rc \
     init.modem.rc \
     init.mt6985.rc \

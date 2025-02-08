@@ -128,6 +128,10 @@ ro.vendor.pq.mtk_video_transition=0
 # DRM
 ro.netflix.bsp_rev=MTK6985-36378-1
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=610|2444|105
+
 # GNSS
 ro.vendor.gps.chrdev=gps_drv_dl_v061
 ro.vendor.mtk_log_hide_gps=1
