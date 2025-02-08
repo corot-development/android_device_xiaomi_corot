@@ -255,6 +255,19 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.nxp.mifare.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
@@ -357,7 +370,11 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/pixel \
+    hardware/google/interfaces \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
 
 # Thermal
