@@ -96,6 +96,17 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.1.vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider-V1-ndk.vendor \
+    android.hardware.camera.provider@2.6.vendor
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor
+
 # ConsumerIR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
