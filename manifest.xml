@@ -9,10 +9,6 @@
         <transport>hwbinder</transport>
         <fqname>@4.0::IAllocator/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>android.hardware.graphics.composer3</name>
-        <fqname>IComposer/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
         <transport arch="32+64">passthrough</transport>
