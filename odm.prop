@@ -1,20 +1,4 @@
-# DisplayFeature
-persist.vendor.dc_backlight.enable=false
-ro.vendor.cabc.enable=false
-ro.vendor.display.all_modes_support_WCG.enable=true
-ro.vendor.display.update_gray_by_temperature=true
-ro.vendor.histogram.enable=1
-ro.vendor.localhbm.enable=true
-ro.vendor.mi_sf.OD_support=1
-ro.vendor.mi_sf.enable_peak_hdr=true
-ro.vendor.mi_sf.hdr_enable_flatmode=true
-ro.vendor.mtk.pq.odm=true
-ro.vendor.sre.enable=false
-ro.vendor.xiaomi.bl.poll=true
-sys.displayfeature_hidl=true
-vendor.displayfeature.entry.enable=true
-
-# Display (Pixelworks)
+# Display
 persist.vendor.display.pxlw.iris_feature=0x413F0780
 ro.vendor.display.iris_x7.support=true
 
