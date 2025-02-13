@@ -259,6 +259,13 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/xiaomi
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
