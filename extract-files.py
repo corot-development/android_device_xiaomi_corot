@@ -55,6 +55,14 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libstagefright_foundation-v33.so'),
     ('vendor/bin/mnld', 'vendor/lib64/mt6985/libaalservice.so', 'vendor/lib64/mt6985/libpqconfig.so', 'vendor/lib64/librgbwlightsensor.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+    'vendor/lib64/mt6985/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
+         .clear_symbol_version('AHardwareBuffer_allocate')
+         .clear_symbol_version('AHardwareBuffer_createFromHandle')
+         .clear_symbol_version('AHardwareBuffer_describe')
+         .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+         .clear_symbol_version('AHardwareBuffer_lock')
+         .clear_symbol_version('AHardwareBuffer_release')
+         .clear_symbol_version('AHardwareBuffer_unlock'),
     ('vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so', 'vendor/lib64/libcodec2_vpp_AISR_plugin.so'): blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so')
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
