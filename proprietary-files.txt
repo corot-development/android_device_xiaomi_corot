@@ -1186,14 +1186,6 @@ vendor/lib64/libformatter.so
 # Media (MMS)
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.7-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc
-vendor/lib/vendor.mediatek.hardware.mms@1.0.so
-vendor/lib/vendor.mediatek.hardware.mms@1.1.so
-vendor/lib/vendor.mediatek.hardware.mms@1.2.so
-vendor/lib/vendor.mediatek.hardware.mms@1.3.so
-vendor/lib/vendor.mediatek.hardware.mms@1.4.so
-vendor/lib/vendor.mediatek.hardware.mms@1.5.so
-vendor/lib/vendor.mediatek.hardware.mms@1.6.so
-vendor/lib/vendor.mediatek.hardware.mms@1.7.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.7-impl.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.1.so
