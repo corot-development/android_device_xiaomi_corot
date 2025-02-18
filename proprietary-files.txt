@@ -966,6 +966,8 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V3-ndk.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
 
 # Display Configs
 odm/etc/cust_color.xml
@@ -1373,16 +1375,6 @@ vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6985.
 vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
 vendor/lib64/libnotifyaudiohal.so
-
-# Sensors (Citsensor)
-odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
-odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
-odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
-odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
-odm/lib64/libssccalapi@2.0.so
-vendor/lib64/libhfmanagerwrapper.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
 
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
