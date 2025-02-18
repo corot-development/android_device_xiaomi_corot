@@ -1078,6 +1078,11 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvaidl.so
 
+# Fidoca
+odm/bin/fidoca_mitee
+odm/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
+odm/lib64/libmfido_mitee.so
+
 # Fingerprint
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
 odm/lib64/libgf_hal.so
@@ -1197,6 +1202,18 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.7.so
+
+# Mlipay
+odm/bin/mlipayd_mitee@1.1
+odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-miteeservice.rc
+odm/lib64/libmlipay_mitee.so
+odm/lib64/libmlipay_mitee@1.1.so
+
+# Mtdservice
+odm/bin/mtd_mitee@1.3
+odm/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-miteeservice.rc
+odm/lib64/libmt_mitee.so
+odm/lib64/libmt_mitee@1.3.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
@@ -1357,7 +1374,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so
 
 # Secure Element
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
@@ -1375,6 +1391,15 @@ vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6985.
 vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
 vendor/lib64/libnotifyaudiohal.so
+
+# Soter
+odm/bin/soterd
+odm/etc/init/vendor.xiaomi.hardware.soterservice@1.0-service.rc
+odm/lib64/libsoter.so
+odm/lib64/vendor.xiaomi.hardware.soterservice@1.0.so
+
+# Soter service (Tencent)
+product/app/SoterService/SoterService.apk
 
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice

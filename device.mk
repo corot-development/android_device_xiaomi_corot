@@ -196,7 +196,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor \
     libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor
+    libkeymaster_portable.vendor \
+    libkeymaster4support.vendor
 
 # Keymint
 PRODUCT_PACKAGES += \
@@ -206,7 +207,8 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk.vendor \
     lib_android_keymaster_keymint_utils.vendor \
     libcppbor_external.vendor \
-    libkeymint.vendor
+    libkeymint.vendor \
+    libkeymint_support.vendor
 
 # Light
 PRODUCT_PACKAGES += \
@@ -446,6 +448,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+# Xiaomi
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mtdservice@1.3.vendor \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor \
+    vendor.xiaomi.hardware.mfidoca@1.0.vendor
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/corot/corot-vendor.mk)
