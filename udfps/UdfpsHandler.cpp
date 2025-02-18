@@ -17,8 +17,8 @@
 
 #include "UdfpsHandler.h"
 
-#include <drm/mi_disp.h>
-#include <linux/xiaomi_touch.h>
+#include "mi_disp.h"
+#include "xiaomi_touch.h"
 
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 1
