@@ -1,5 +1,6 @@
 bluetooth.device.default_name=Redmi K60 Ultra
 vendor.usb.product_string=Redmi K60 Ultra
+ro.miui.build.region=cn
 ro.product.odm.brand=Redmi
 ro.product.odm.device=corot
 ro.product.odm.model=23078RKD5C

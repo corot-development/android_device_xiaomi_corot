@@ -1,5 +1,6 @@
 bluetooth.device.default_name=Xiaomi 13T Pro
 vendor.usb.product_string=Xiaomi 13T Pro
+ro.miui.build.region=global
 ro.product.odm.brand=Xiaomi
 ro.product.odm.device=corot
 ro.product.odm.model=23088PND5R
