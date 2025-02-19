@@ -1,0 +1,26 @@
+# Audio
+type audio_socket, file_type;
+type sysfs_f0_value, fs_type, sysfs_type;
+type sysfs_re25_calib, fs_type, sysfs_type;
+type sound_device, dev_type, mlstrustedobject;
+
+# Camera
+type camera_persist_file, file_type;
+type vendor_camera_data_file, data_file_type, file_type;
+
+# Display
+type vendor_displayfeature_device, dev_type;
+type vendor_displayfeature_sysfs, sysfs_type, fs_type;
+
+# Fingerprint
+type vendor_fingerprint_sysfs, sysfs_type, fs_type;
+
+# Ir
+type vendor_ir_spi_device, dev_type;
+
+# Power
+type vendor_touchfeature_device, dev_type;
+
+# TEE
+type mitee_data_file, data_file_type, file_type;
+type proc_mitee_log, fs_type, proc_type;

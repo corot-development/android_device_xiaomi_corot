@@ -1,0 +1,87 @@
+# Audio
+genfscon sysfs /class/smartpa/re25_calib u:object_r:sysfs_re25_calib:s0
+genfscon sysfs /devices/platform/soc/11d00000.i2c/i2c-1/1-005a/f0_value u:object_r:sysfs_f0_value:s0
+
+# Display
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/panel_info u:object_r:vendor_displayfeature_sysfs:s0
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/brightness_clone u:object_r:vendor_displayfeature_sysfs:s0
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/wp_info u:object_r:vendor_displayfeature_sysfs:s0
+
+# Extcon
+genfscon sysfs /devices/platform/14800000.dp-tx/extcon u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon-usb/extcon/extcon1 u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon-usb1/extcon/extcon2 u:object_r:sysfs_extcon:s0
+
+# Fingerprint
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/platform/fingerprint/clk_enable u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/platform/fingerprint/fingerdown_wait u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/platform/fingerprint/irq u:object_r:vendor_fingerprint_sysfs:s0
+
+# Power
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-0064/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-0065/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0055/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0064/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0065/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0066/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0064/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0065/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0066/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0067/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11e81000.i2c/i2c-7/7-0055/verify_digest u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0055/verify_digest u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0064/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0065/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0066/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11f05000.i2c/i2c-13/13-0055/power_supply u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11f05000.i2c/i2c-13/13-0055/verify_digest u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0055/verify_digest u:object_r:sysfs_power_supply:s0
+
+# Wakeup (https://lkml.org/lkml/2019/8/6/1275)
+genfscon sysfs /devices/platform/charger/power_supply/mtk-mst-div-chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/mtk-slv-div-chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:xiaomi_wifi_gpio/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c7b1000.i2c/i2c-15/15-006b/mt6338-auxadc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-0f/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-05/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-06/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-07/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-09/mt6685-rtc/rtc/rtc0/alarmtimer.0.auto/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-09/mt6685-rtc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1e000000.adspsys/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1f000000.mdp/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1f800000.mmlsys-config/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11d00000.i2c/i2c-1/1-005a/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11d01000.i2c/i2c-2/2-0010/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11d02000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0010/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11d05000.i2c/i2c-8/8-0010/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0022/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0064/power_supply/cp_master/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0065/power_supply/cp_slave/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11f05000.i2c/i2c-13/13-0055/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11016000.spi6/spi_master/spi6/spi6.0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11017000.spi7/spi_master/spi7/spi7.0/goodix_fp/goodix_fp/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11201000.usb0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11211000.usb1/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:adc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:auxadc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:chg/power_supply/11280000.i2c:mt6375@34:chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:mtk_gauge/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/18011000.consys/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/trusty/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/power_supply/mtk-gauge/wakeup u:object_r:sysfs_wakeup:s0
+
+# TEE
+genfscon proc /mitee_log u:object_r:proc_mitee_log:s0
+
+# USB
+genfscon sysfs /devices/platform/soc/soc:rt-pd-manager/typec/port0 u:object_r:sysfs_usb_nonplat:s0

@@ -1,0 +1,11 @@
+# Fingerprint
+type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
+
+# Mfidoca
+type hal_mfidoca_hwservice, hwservice_manager_type;
+
+# Mlipay
+type hal_mlipay_hwservice, hwservice_manager_type;
+
+# Mtdservice
+type hal_mtdservice_hwservice, hwservice_manager_type;
