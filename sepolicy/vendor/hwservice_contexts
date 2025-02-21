@@ -1,6 +1,10 @@
 # Camera
 vendor.xiaomi.hardware.bgservice::IBGService u:object_r:mtk_hal_bgs_hwservice:s0
 
+# Display
+vendor.pixelworks.hardware.display::IIris u:object_r:hal_display_iris_hwservice:s0
+vendor.pixelworks.hardware.feature::IIrisFeature u:object_r:hal_display_iris_hwservice:s0
+
 # Fingerprint
 vendor.xiaomi.hardware.fx.tunnel::IMiFxTunnel u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
 

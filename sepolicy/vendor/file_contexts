@@ -99,6 +99,8 @@
 
 # Display
 /dev/mi_display/disp_feature u:object_r:vendor_displayfeature_device:s0
+/mnt/vendor/iris(/.*)? u:object_r:mnt_vendor_iris_file:s0
+/mnt/vendor/persist/display(/.*)? u:object_r:vendor_persist_display_file:s0
 
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
