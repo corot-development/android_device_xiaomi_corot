@@ -7,3 +7,6 @@ attribute hal_mtdservice_server;
 attribute hal_mfidoca;
 attribute hal_mfidoca_client;
 attribute hal_mfidoca_server;
+attribute hal_soterservice;
+attribute hal_soterservice_client;
+attribute hal_soterservice_server;

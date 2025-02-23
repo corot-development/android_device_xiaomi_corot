@@ -9,3 +9,6 @@ type hal_mlipay_hwservice, hwservice_manager_type;
 
 # Mtdservice
 type hal_mtdservice_hwservice, hwservice_manager_type;
+
+# Soter
+type hal_soterservice_hwservice, hwservice_manager_type;

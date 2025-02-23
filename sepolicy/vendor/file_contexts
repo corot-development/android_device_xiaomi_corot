@@ -140,6 +140,9 @@
 # Sensors
 /vendor/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal u:object_r:hal_sensors_default_exec:s0
 
+# Soter
+/odm/bin/soterd u:object_r:hal_soterservice_default_exec:s0
+
 # TEE
 /vendor/bin/tee-supplicant u:object_r:tee_exec:s0
 /vendor/bin/miteelog u:object_r:tee_exec:s0

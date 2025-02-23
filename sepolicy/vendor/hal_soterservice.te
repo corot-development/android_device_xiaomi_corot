@@ -1,0 +1,19 @@
+type hal_soterservice_default, domain;
+hal_server_domain(hal_soterservice_default, hal_soterservice)
+
+type hal_soterservice_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_soterservice_default)
+
+binder_use(hal_soterservice_default)
+
+# Allow hwbinder call from hal client to server
+binder_call(hal_soterservice_client, hal_soterservice_server)
+
+add_hwservice(hal_soterservice_server, hal_soterservice_hwservice)
+
+allow hal_soterservice_default tee_device:chr_file rw_file_perms;
+allow hal_soterservice_default ion_device:chr_file r_file_perms;
+allow hal_soterservice_default teei_client_device:chr_file rw_file_perms;
+
+set_prop(hal_soterservice_default, vendor_mlipay_prop);
+get_prop(hal_soterservice_default, vendor_fingerprint_prop);
