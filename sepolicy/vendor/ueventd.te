@@ -1,0 +1,2 @@
+allow ueventd mnt_vendor_file:dir search;
+allow ueventd mnt_vendor_file:file r_file_perms;
