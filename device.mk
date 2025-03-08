@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.common-V3-ndk.vendor \
+    android.hardware.graphics.common-V5-ndk.vendor \
     android.hardware.graphics.composer3-V1-ndk.vendor \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.frameworks.sensorservice@1.0.vendor \

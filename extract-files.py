@@ -55,6 +55,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libstagefright_foundation-v33.so'),
     ('vendor/bin/mnld', 'vendor/lib64/mt6985/libaalservice.so', 'vendor/lib64/mt6985/libpqconfig.so', 'vendor/lib64/librgbwlightsensor.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+    ('vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so', 'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so', 'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V3-ndk.so', 'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so', 'vendor/lib64/libcodec2_vpp_AISR_plugin.so'): blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V5-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
