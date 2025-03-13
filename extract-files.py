@@ -45,6 +45,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
         .replace_needed('android.hardware.graphics.composer@2.1-resources.so', 'android.hardware.graphics.composer@2.1-resources-v34.so'),
     'vendor/bin/hw/android.hardware.security.keymint@2.0-service.mitee': blob_fixup()
+        .replace_needed('android.hardware.security.keymint-V2-ndk.so', 'android.hardware.security.keymint-V3-ndk.so')
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'vendor/lib64/mt6985/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
