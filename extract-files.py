@@ -64,6 +64,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/lib64/libmialgoengine.so', 'vendor/lib64/mt6985/lib3a.af.assist.so', 'vendor/lib64/mt6985/libcam.hal3a.so', 'vendor/lib64/mt6985/libcam.hal3a.ctrl.so', 'vendor/lib64/mt6985/libmtkcam_cputrack.so', 'vendor/lib64/mt6985/libmtkcam_request_requlator.so'): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/mt6985/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
          .clear_symbol_version('AHardwareBuffer_allocate')
          .clear_symbol_version('AHardwareBuffer_createFromHandle')
