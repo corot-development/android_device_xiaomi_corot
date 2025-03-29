@@ -940,7 +940,6 @@ vendor/lib64/mt6985/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
 vendor/lib64/mt6985/libgamehdr.so;SYMLINK=vendor/lib64/libgamehdr.so
 vendor/lib64/mt6985/libmmlpqImpl.so;SYMLINK=vendor/lib64/libmmlpqImpl.so
 vendor/lib64/mt6985/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
-vendor/lib64/mt6985/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_driver.so
 vendor/lib64/mt6985/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
 vendor/lib64/mt6985/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/mt6985/libpqconfig.so;SYMLINK=vendor/lib64/libpqconfig.so
