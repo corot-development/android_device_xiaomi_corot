@@ -34,6 +34,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/lib64/libmt_mitee@1.3.so': blob_fixup()
+        .replace_needed('android.hardware.security.keymint-V2-ndk.so', 'android.hardware.security.keymint-V4-ndk.so'),
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
         .apktool_patch('blob-patches/ImsService.patch', '-r'),
     'system_ext/lib64/libsource.so': blob_fixup()
