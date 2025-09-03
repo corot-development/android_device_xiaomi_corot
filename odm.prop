@@ -5,3 +5,17 @@ ro.vendor.display.iris_x7.support=true
 # SKU
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 import /odm/etc/${ro.boot.hwc}.prop
+
+# NFC
+ro.vendor.se.type=eSE,HCE,UICC
+ro.vendor.se.chip.model=SN110T
+ro.vendor.nfc.disable.i2c=false
+ro.vendor.se.info=17-673904
+ro.vendor.nfc.repair=1
+ro.vendor.nfc.dispatch_optim=1
+ro.vendor.nfc.wallet_fusion=1
+ro.vendor.nfc.secure_display_optim=1
+ro.vendor.nfc.aclog=1
+ro.vendor.nfc.debounce_field_on=1
+ro.vendor.nfc.field_on_debounce=500
+ro.miui.nfc.open_camera=1

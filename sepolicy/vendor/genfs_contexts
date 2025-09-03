@@ -85,3 +85,6 @@ genfscon proc /mitee_log u:object_r:proc_mitee_log:s0
 
 # USB
 genfscon sysfs /devices/platform/soc/soc:rt-pd-manager/typec/port0 u:object_r:sysfs_usb_nonplat:s0
+
+# NFC
+genfscon sysfs /devices/platform/soc/11e80000.i2c/i2c-3/3-0028/chip_name u:object_r:sysfs_chip_name:s0

@@ -26,3 +26,7 @@ type vendor_touchfeature_device, dev_type;
 # TEE
 type mitee_data_file, data_file_type, file_type;
 type proc_mitee_log, fs_type, proc_type;
+
+# NFC
+type nfc_vendor_data_file, data_file_type, file_type;
+type sysfs_chip_name, fs_type, sysfs_type;

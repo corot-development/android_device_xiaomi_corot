@@ -1,2 +1,2 @@
-ro.product.mod_device    u:object_r:exported_default_prop:s0 exact string
+ro.product.mod_device   u:object_r:exported_default_prop:s0 exact string
 ro.miui.build.region    u:object_r:exported_default_prop:s0

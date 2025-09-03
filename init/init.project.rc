@@ -5,6 +5,11 @@ import /vendor/etc/init/hw/init.mi_thermald.rc
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    chmod 0660 /dev/p73
+    chown nfc nfc /dev/p73
 
 on post-fs-data
     # Thermal
