@@ -5,7 +5,6 @@
 
 # Battery
 /vendor/bin/batterysecret u:object_r:vendor_batterysecret_exec:s0
-/vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service u:object_r:hal_micharge_default_exec:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
