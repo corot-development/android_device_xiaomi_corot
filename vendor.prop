@@ -74,6 +74,7 @@ vendor.mtk.camera.app.fd.video=1
 
 # Charging
 persist.vendor.accelerate.charge=true
+ro.vendor.mtk_fast_charging_support=1
 
 # ConsumerIR
 ro.hardware.consumerir=common
