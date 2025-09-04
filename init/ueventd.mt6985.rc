@@ -46,6 +46,9 @@
 /dev/aol_flp              0660   system     system
 /dev/aol_geofence         0660   system     system
 
+# Charger
+/sys/class/power_supply/battery input_suspend 0660 system system
+
 # BT
 /dev/stpbt                0660   bluetooth  bluetooth
 /dev/fw_log_bt            0660   bluetooth  bluetooth
