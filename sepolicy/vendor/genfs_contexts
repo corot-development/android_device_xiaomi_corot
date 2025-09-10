@@ -39,7 +39,10 @@ genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0066/power_supply u:
 genfscon sysfs /devices/platform/soc/11f05000.i2c/i2c-13/13-0055/power_supply u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/11f05000.i2c/i2c-13/13-0055/verify_digest u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0055/verify_digest u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:mtk_gauge/power_supply/battery/input_suspend u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/rt-pd-manager/typec/port0 u:object_r:sysfs_usb_nonplat:s0
+genfscon sysfs /devices/platform/rt-pd-manager/typec/port0/data_role u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/rt-pd-manager/typec/port0/port_type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/rt-pd-manager/typec/port0/power_role u:object_r:sysfs_power_supply:s0
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/charger/power_supply/mtk-mst-div-chg/wakeup u:object_r:sysfs_wakeup:s0
