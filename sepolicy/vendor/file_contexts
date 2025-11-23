@@ -5,6 +5,9 @@
 
 # Battery
 /vendor/bin/batterysecret u:object_r:vendor_batterysecret_exec:s0
+/sys/devices/platform/rt-pd-manager/typec/port0/data_role u:object_r:sysfs_usb_nonplat:s0
+/sys/devices/platform/rt-pd-manager/typec/port0/port_type u:object_r:sysfs_usb_nonplat:s0
+/sys/devices/platform/rt-pd-manager/typec/port0/power_role u:object_r:sysfs_usb_nonplat:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
