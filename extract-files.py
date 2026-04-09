@@ -39,6 +39,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'vendor/firmware/txpowerctrl.cfg': blob_fixup()
         .regex_replace('\t', ''),
+    'vendor/bin/hw/mtkfusionrild' : blob_fixup()
+        .add_needed('libutils-v32.so'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libalsautils.so', 'libalsautils-v33.so'),
