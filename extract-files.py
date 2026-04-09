@@ -41,6 +41,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('\t', ''),
     'vendor/bin/hw/mtkfusionrild' : blob_fixup()
         .add_needed('libutils-v32.so'),
+    'vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc': blob_fixup()
+        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libalsautils.so', 'libalsautils-v33.so'),
