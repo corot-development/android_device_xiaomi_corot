@@ -115,6 +115,16 @@ on property:sys.boot_completed=1
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
+service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
+    class hal animation
+    interface android.hardware.graphics.allocator@4.0::IAllocator default
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    task_profiles ProcessCapacityHigh HighPerformance
+    override
+
 service vendor.hwcomposer-3-1 /vendor/bin/hw/android.hardware.graphics.composer@3.1-service
     class hal animation
     user system
