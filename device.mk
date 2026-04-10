@@ -140,8 +140,8 @@ PRODUCT_PACKAGES += \
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
-    
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # Permissions
 PRODUCT_COPY_FILES += \
