@@ -47,10 +47,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/mtkfusionrild' : blob_fixup()
         .add_needed('libutils-v32.so'),
 
-    'vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc': blob_fixup()
-        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore default')
-        .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
-        .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default'),
+    'vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml': blob_fixup()
+        .regex_replace('1.1', '1.2'),
 
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
@@ -84,7 +82,7 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so', 'vendor/lib64/libcodec2_vpp_AISR_plugin.so'): blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so')
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
-        
+
     ('vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so', 'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so', 'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V3-ndk.so'): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
     ('vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk', 'vendor/lib64/libnvram.so', 'vendor/lib64/libtflite_mtk.so'): blob_fixup()
