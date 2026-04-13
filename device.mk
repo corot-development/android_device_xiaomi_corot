@@ -83,7 +83,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.mediatek-mali
+    android.hardware.memtrack-service.mediatek
 
 # DRM
 PRODUCT_PACKAGES += \
