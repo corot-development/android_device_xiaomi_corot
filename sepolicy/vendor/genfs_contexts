@@ -45,8 +45,6 @@ genfscon sysfs /devices/platform/rt-pd-manager/typec/port0/port_type u:object_r:
 genfscon sysfs /devices/platform/rt-pd-manager/typec/port0/power_role u:object_r:sysfs_usb_nonplat:s0
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
-genfscon sysfs /devices/platform/charger/power_supply/mtk-mst-div-chg/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/charger/power_supply/mtk-slv-div-chg/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/odm/odm:xiaomi_wifi_gpio/wakeup u:object_r:sysfs_wakeup:s0
