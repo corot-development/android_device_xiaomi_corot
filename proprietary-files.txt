@@ -913,7 +913,7 @@ vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libdre.so
 vendor/lib64/libged.so
-vendor/lib64/libgpu_aux.so
+vendor/lib64/libgpu_aux.so;DISABLE_DEPS
 vendor/lib64/libgpud.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
