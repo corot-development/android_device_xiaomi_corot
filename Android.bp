@@ -1,2 +1,9 @@
 soong_namespace {
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor.pixelworks.hardware.feature_interface",
+    interfaces: [
+        "vendor.pixelworks.hardware.feature@1.0::IIrisFeature",
+    ],
+}
