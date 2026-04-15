@@ -7,6 +7,7 @@
 DEVICE_PATH := device/xiaomi/corot
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # A/B
 AB_OTA_UPDATER := true
