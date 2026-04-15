@@ -57,8 +57,6 @@ genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-07/wakeup u:object_r
 genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-09/mt6685-rtc/rtc/rtc0/alarmtimer.0.auto/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-09/mt6685-rtc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1e000000.adspsys/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1f000000.mdp/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1f800000.mmlsys-config/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11d00000.i2c/i2c-1/1-005a/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11d01000.i2c/i2c-2/2-0010/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11d02000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
@@ -79,8 +77,6 @@ genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt63
 genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11280000.i2c/i2c-5/5-0034/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18011000.consys/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/trusty/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/virtual/power_supply/mtk-gauge/wakeup u:object_r:sysfs_wakeup:s0
 
 # TEE
 genfscon proc /mitee_log u:object_r:proc_mitee_log:s0
